@@ -6,6 +6,7 @@ import {
   StyleSheet,
   KeyboardAvoidingView,
   Pressable,
+  ScrollView,
 } from 'react-native';
 import Header from '../components/Header';
 import UserTextInput from '../components/UserTextInput';
@@ -18,15 +19,16 @@ const SignUp = props => {
       style={{flex: 1}}
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
       <Header title="SignUp" navigation={props.navigation} />
-      <View style={{marginTop: 40}}>
-        <UserTextInput title="Enter Name" />
-        <UserTextInput title="Enter Phone Number" />
-        <UserTextInput title="Enter E-mail" />
-        <UserTextInput title="Enter Password" />
-      </View>
+      <ScrollView>
+        <View style={{marginTop: 40}}>
+          <UserTextInput title="Enter Name" />
+          <UserTextInput title="Enter Phone Number" />
+          <UserTextInput title="Enter E-mail" />
+          <UserTextInput title="Enter Password" />
+        </View>
 
-      <SubmitButton title="SignUp" />
-
+        <SubmitButton title="SignUp" />
+      </ScrollView>
       <View
         style={{
           flex: 1,

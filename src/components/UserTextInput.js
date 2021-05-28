@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
   textInput: {
     width: '75%',
     alignSelf: 'center',
-    // flex: 0.07,
-    paddingVertical: 15,
+    //flex: 0.07,
+    //paddingVertical: 15,
     fontSize: 15,
     margin: '5%',
     borderRadius: 3,
